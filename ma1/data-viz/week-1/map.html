@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_514dbed72de2d1cbc1ba3b37fc52ddfc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_514dbed72de2d1cbc1ba3b37fc52ddfc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_514dbed72de2d1cbc1ba3b37fc52ddfc = L.map(
+                "map_514dbed72de2d1cbc1ba3b37fc52ddfc",
+                {
+                    center: [46.8, 8.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bb30cd35a13fdd0f0def9a71892a920e = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bb30cd35a13fdd0f0def9a71892a920e.addTo(map_514dbed72de2d1cbc1ba3b37fc52ddfc);
+        
+    
+            var marker_cluster_6ec14b0d7f1639257ee905a004f9b514 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_93670a2cc5a646ef7d0c6de028191b21 = L.marker(
+                [46.791321, 7.1161892],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_745041ec66ba349521b6905088d0ddab = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e1\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_93670a2cc5a646ef7d0c6de028191b21.bindTooltip(
+                `<div>
+                     Villars-sur-Glâne — 1 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_93670a2cc5a646ef7d0c6de028191b21.setIcon(div_icon_745041ec66ba349521b6905088d0ddab);
+            
+    
+            var marker_f90f7353b3dd2c4cca2e7afb600fb363 = L.marker(
+                [46.8496406, 6.8477378],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_02e30efaaf8b39d91b82456ff8194da7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e1\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_f90f7353b3dd2c4cca2e7afb600fb363.bindTooltip(
+                `<div>
+                     Estavayer-le-lac — 1 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f90f7353b3dd2c4cca2e7afb600fb363.setIcon(div_icon_02e30efaaf8b39d91b82456ff8194da7);
+            
+    
+            var marker_b2bea3ae13d729c8e5fee844c4be541b = L.marker(
+                [46.2311749, 7.3588795],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_4e3c6856a7a4d10c988073d45ee84cba = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e1\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_b2bea3ae13d729c8e5fee844c4be541b.bindTooltip(
+                `<div>
+                     Sion — 1 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2bea3ae13d729c8e5fee844c4be541b.setIcon(div_icon_4e3c6856a7a4d10c988073d45ee84cba);
+            
+    
+            var marker_293fe8bdcabb6619a4bfe4a492836b26 = L.marker(
+                [46.5349093, 6.5928442],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_9fe3117cd9d29c8fba06b4f8223d5995 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e1\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_293fe8bdcabb6619a4bfe4a492836b26.bindTooltip(
+                `<div>
+                     Renens — 1 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_293fe8bdcabb6619a4bfe4a492836b26.setIcon(div_icon_9fe3117cd9d29c8fba06b4f8223d5995);
+            
+    
+            var marker_a6cf2b79c7ab56150c55c804fd3e46d9 = L.marker(
+                [46.6190969, 7.0581152],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_84152d13596494d5c2503f4260497375 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e2\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_a6cf2b79c7ab56150c55c804fd3e46d9.bindTooltip(
+                `<div>
+                     Bulle — 2 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a6cf2b79c7ab56150c55c804fd3e46d9.setIcon(div_icon_84152d13596494d5c2503f4260497375);
+            
+    
+            var marker_f10c96f839c338b311846cc13ea9f699 = L.marker(
+                [46.9895828, 6.9292641],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_44bde792ee1784bfb608479dd507b912 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e2\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_f10c96f839c338b311846cc13ea9f699.bindTooltip(
+                `<div>
+                     Neuchâtel — 2 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f10c96f839c338b311846cc13ea9f699.setIcon(div_icon_44bde792ee1784bfb608479dd507b912);
+            
+    
+            var marker_c3412ca76c4248dd44358b2594e4de86 = L.marker(
+                [46.6789116, 7.1027113],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_4458dff68347bdc0b7e139f5b860570d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e3\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_c3412ca76c4248dd44358b2594e4de86.bindTooltip(
+                `<div>
+                     Fribourg — 3 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3412ca76c4248dd44358b2594e4de86.setIcon(div_icon_4458dff68347bdc0b7e139f5b860570d);
+            
+    
+            var marker_4a6ffea71fe205c103bd741855b85a41 = L.marker(
+                [46.7785711, 6.6409158],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_2fdef29e98e87a2888816c3a7c9a0e97 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e1\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_4a6ffea71fe205c103bd741855b85a41.bindTooltip(
+                `<div>
+                     Yverdon — 1 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a6ffea71fe205c103bd741855b85a41.setIcon(div_icon_2fdef29e98e87a2888816c3a7c9a0e97);
+            
+    
+            var marker_56b84523d675d941b9d9ccd8e10dd17b = L.marker(
+                [46.5218269, 6.6327025],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_ad414109a311bd5d2acf5476ad5b7593 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e1\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_56b84523d675d941b9d9ccd8e10dd17b.bindTooltip(
+                `<div>
+                     Lausanne — 1 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56b84523d675d941b9d9ccd8e10dd17b.setIcon(div_icon_ad414109a311bd5d2acf5476ad5b7593);
+            
+    
+            var marker_bb4a73b1a0fa81ebeb0cf06d6e9653b6 = L.marker(
+                [46.7084888, 7.0549892],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_0879756ff6fe74cfbaf315b8c87cfa7a = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e1\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_bb4a73b1a0fa81ebeb0cf06d6e9653b6.bindTooltip(
+                `<div>
+                     Vuisternens-en-Ogoz — 1 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb4a73b1a0fa81ebeb0cf06d6e9653b6.setIcon(div_icon_0879756ff6fe74cfbaf315b8c87cfa7a);
+            
+    
+            var marker_aa1a2673b45fae6eebb12185393d9da0 = L.marker(
+                [46.2017559, 6.1466014],
+                {
+}
+            ).addTo(marker_cluster_6ec14b0d7f1639257ee905a004f9b514);
+        
+    
+            var div_icon_56d394e1b66429f33849d4e00515b8e7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3186cc;\n                    color: white;\n                    width: 20px;\n                    height: 20px;\n                    border-radius: 50%;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n                    font-size: 12px;\n                    font-weight: bold;\n                    border: 2px solid white;\n                    box-shadow: 0 0 4px rgba(0,0,0,0.4);\n                \"\u003e2\u003c/div\u003e\n            ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_aa1a2673b45fae6eebb12185393d9da0.bindTooltip(
+                `<div>
+                     Genève — 2 personne(s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa1a2673b45fae6eebb12185393d9da0.setIcon(div_icon_56d394e1b66429f33849d4e00515b8e7);
+            
+    
+            marker_cluster_6ec14b0d7f1639257ee905a004f9b514.addTo(map_514dbed72de2d1cbc1ba3b37fc52ddfc);
+        
+    
+            var tile_layer_92a0e57dd28db861456055cba709261d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "CartoDB",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_92a0e57dd28db861456055cba709261d.addTo(map_514dbed72de2d1cbc1ba3b37fc52ddfc);
+        
+</script>
+</html>

@@ -1,0 +1,21 @@
+[project]
+name = "week-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Olivier Amacker", email = "olivier.amacker@netplus.ch" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "earthengine-api>=1.7.43",
+    "geemap>=0.38.5",
+    "marimo>=0.24.2",
+]
+
+[project.scripts]
+week-1 = "week_1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
