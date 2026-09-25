@@ -1,0 +1,10 @@
+- Toucher
+    - Braille (Ordinale)
+    - Emballage (Catégorique)
+- Ouille
+    - Pub à la radio (Catégorique)
+    - Musiques (Catégorique)
+    - Morse (Ordinale)
+- Odorat
+    - Parfum (Catégorique)
+    - Nouriture (Catégorique)
