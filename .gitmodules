@@ -1,0 +1,3 @@
+[submodule "ma1/gpu-ai-robotic"]
+	path = ma1/gpu-ai-robotic
+	url = git@github.com:MadeInShineA/gpu-ai-robotic.git
