@@ -27,6 +27,8 @@
             python313
             ruff
             pyright
+
+            google-cloud-sdk
           ];
 
           env.LD_LIBRARY_PATH =
