@@ -7,18 +7,21 @@
   };
 
   outputs =
-
     {
       self,
       nixpkgs,
       flake-utils,
     }:
-
     flake-utils.lib.eachDefaultSystem (
       system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
 
+        # gcloud with extra components baked in
+        gcloud = pkgs.google-cloud-sdk.withExtraComponents [
+          pkgs.google-cloud-sdk.components.kubectl
+          pkgs.google-cloud-sdk.components.gke-gcloud-auth-plugin
+        ];
       in
       {
         devShells.default = pkgs.mkShell {
@@ -28,7 +31,7 @@
             ruff
             pyright
 
-            google-cloud-sdk
+            gcloud
           ];
 
           env.LD_LIBRARY_PATH =
@@ -39,7 +42,6 @@
               libGL
               glib
             ];
-
         };
       }
     );
