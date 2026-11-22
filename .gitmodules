@@ -4,3 +4,15 @@
 [submodule "ma1/data-viz/data-viz-project"]
 	path = ma1/data-viz/data-viz-project
 	url = git@github.com:MadeInShineA/data-viz-project.git
+[submodule "ma1/cloud/week-5/k8s-lab"]
+	path = ma1/cloud/week-5/k8s-lab
+	url = git@github.com:MadeInShineA/k8s-lab.git
+[submodule "ma1/sensor-data/sensor-data-lab-02"]
+	path = ma1/sensor-data/sensor-data-lab-02
+	url = git@github.com:MadeInShineA/sensor-data-lab-02.git
+[submodule "ma1/cloud/project"]
+	path = ma1/cloud/project
+	url = git@github.com:MadeInShineA/cloudsys-project.git
+[submodule "ma1/cloud/26-cloudsys-cloud-provisioning-group-20"]
+	path = ma1/cloud/26-cloudsys-cloud-provisioning-group-20
+	url = git@github.com:HEIGVD-MSE-TSM-CloudSys/26-cloudsys-cloud-provisioning-group-20.git
