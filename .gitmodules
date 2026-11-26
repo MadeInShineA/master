@@ -16,3 +16,6 @@
 [submodule "ma1/cloud/26-cloudsys-cloud-provisioning-group-20"]
 	path = ma1/cloud/26-cloudsys-cloud-provisioning-group-20
 	url = git@github.com:HEIGVD-MSE-TSM-CloudSys/26-cloudsys-cloud-provisioning-group-20.git
+[submodule "ma1/sensor-data/aml-project"]
+	path = ma1/sensor-data/aml-project
+	url = git@github.com:madeinshinea/aml-project.git
